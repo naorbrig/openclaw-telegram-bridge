@@ -1,0 +1,16 @@
+[Unit]
+Description=Telegram Bot-to-Bot Bridge
+After=network.target
+
+[Service]
+Type=simple
+User=your_user
+WorkingDirectory=/path/to/openclaw-telegram-bridge
+ExecStart=/usr/bin/python3 /path/to/openclaw-telegram-bridge/bridge.py
+Restart=always
+RestartSec=5
+StandardOutput=append:/path/to/openclaw-telegram-bridge/bridge.log
+StandardError=append:/path/to/openclaw-telegram-bridge/bridge.log
+
+[Install]
+WantedBy=multi-user.target

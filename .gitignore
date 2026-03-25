@@ -1,0 +1,17 @@
+# Secrets
+.env
+*.session
+config.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
+relay/
+
+# OS
+.DS_Store
+Thumbs.db
